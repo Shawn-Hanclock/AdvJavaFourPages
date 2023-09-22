@@ -1,0 +1,10 @@
+html, body{
+  height:100%;
+  width:100%;
+  background-color: whitesmoke;
+}
+
+h1{
+  color:black;
+  font-family: 'Consolos', san-serif;
+}
