@@ -132,7 +132,7 @@ p {
 }
  */
 
-/* #btnTop {
+#btnTop {
   display: none;
   position: fixed;
   bottom: 10px;
@@ -151,4 +151,4 @@ p {
 
 #myBtn:hover {
   background-color: #555;
-} */
+}
