@@ -1,11 +1,39 @@
-<header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <!-- <li><a href="page1.html">Page #1</a></li>
-        <li><a href="page2.html">Page #2</a></li>
-        <li><a href="page3.html">Page #3</a></li> -->
-      </ul>
-    </nav>
-  </header>
-<h1>This is page 1.</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Math Plants</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <div class="header">
+  <div id="pg1SideBar" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+  </div>
+    <span style="
+  margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>Menu</i></span>
+</div>
+  
+<body>
+  
+
+  <!-- contents of page -->
+  <h2>This is page 1.</h2>
+  <script>
+    function openNav() {
+      document.getElementById("pg1SideBar").style.width = "10%"";
+    }
+
+    function closeNav() {
+      document.getElementById("pg1SideBar").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

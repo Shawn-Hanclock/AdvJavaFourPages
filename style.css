@@ -1,10 +1,62 @@
-html, body{
-  height:100%;
-  width:100%;
+* {
+    padding:0;
+    margin:0;
+}
+
+body{
+  /* height:100%;
+  width:100%; */
+  font-family: "Lato", sans-serif;
   background-color: whitesmoke;
 }
 
-h1{
-  color:black;
-  font-family: "Shadows Into Light", sans-serif;
+.header{
+  margin-top: -30px;
+  padding-top: 25px;
+  background-color: #707070;
+}
+
+.mTxt{
+  font-size:30px;
+  cursor:pointer
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #c43c3c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 10%;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -5px;
+  right: 2%;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 30px;}
 }
