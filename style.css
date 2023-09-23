@@ -1,24 +1,44 @@
 * {
-    padding:0;
-    margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-body{
+body {
   /* height:100%;
   width:100%; */
   font-family: "Lato", sans-serif;
   background-color: whitesmoke;
 }
 
-.header{
-  margin-top: -30px;
-  padding-top: 25px;
-  background-color: #707070;
+h1 {
+  margin-top: -20px;
+  color: #4a0406;
+  font-family: 'Oranienbaum';
+  text-align: center;
+  font-size: 70px;
 }
 
-.mTxt{
-  font-size:30px;
-  cursor:pointer
+p {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-size: 50px;
+  font-family: 'Scheherazade';
+}
+
+.header {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  font-family: 'Markazi-Text';
+  color:#E6F8F6;
+  background-color: #0b0035;
+}
+
+
+.mTxt {
+  font-size: 30px;
+  cursor: pointer
 }
 
 .sidenav {
@@ -27,8 +47,8 @@ body{
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #c43c3c;
+  left: 0; 
+  background-color: #5f0507;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -38,8 +58,8 @@ body{
   padding: 8px 8px 8px 10%;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Lato", sans-serif;
-  color: #000000;
+  font-family: 'Nova-Round';
+  color: #E6F8F6;
   display: block;
   transition: 0.3s;
 }
@@ -57,6 +77,11 @@ body{
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 30px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 30px;
+  }
 }
