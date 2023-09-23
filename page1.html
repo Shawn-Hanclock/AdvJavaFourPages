@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Oranienbaum|Scheherazade" rel="stylesheet">
 </head>
 
-  <div class="header">
+
+<body>
+<header>
   <div id="pg1SideBar" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
@@ -17,24 +19,23 @@
     <a href="page2.html">Page 2</a>
     <a href="page3.html">Page 3</a>
   </div>
-    <span style="
+  <span style="
   margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>Menu</i></span>
-</div>
-  
-<body>
-  
+</header>
+
 
   <!-- contents of page -->
-  <h2>This is page 1.</h2>
-  <script>
-    function openNav() {
-      document.getElementById("pg1SideBar").style.width = "10%"";
-    }
+  <h2>This is page 2.</h2>
 
-    function closeNav() {
-      document.getElementById("pg1SideBar").style.width = "0";
-    }
-  </script>
 </body>
+<script>
+  function openNav() {
+    document.getElementById("pg1SideBar").style.width = "10%";
+  }
+
+  function closeNav() {
+    document.getElementById("pg1SideBar").style.width = "0";
+  }
+</script>
 
 </html>

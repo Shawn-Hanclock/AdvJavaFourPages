@@ -10,7 +10,9 @@
 </head>
 
 
-   <div class="header">
+<body>
+
+<header>
   <div id="pg3SideBar" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
@@ -18,22 +20,24 @@
     <a href="page2.html">Page 2</a>
     <a href="page3.html"><b>Page 3</b></a>
   </div>
-    <span style="
+  <span style="
   margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>Menu</i></span>
-</div>
-  
-<body>
-  
-  
+</header>
+
+
+
   <!-- contents of page -->
   <h2>This is page 3.</h2>
-  <script>
-    function openNav() {
-      document.getElementById("pg3SideBar").style.width = "10%";
-    }
 
-    function closeNav() {
-      document.getElementById("pg3SideBar").style.width = "0";
-    }
-  </script>
 </body>
+<script>
+  function openNav() {
+    document.getElementById("pg3SideBar").style.width = "10%";
+  }
+
+  function closeNav() {
+    document.getElementById("pg3SideBar").style.width = "0";
+  }
+</script>
+
+</html>

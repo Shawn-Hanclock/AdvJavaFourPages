@@ -3,22 +3,37 @@
   margin: 0;
 }
 
+html, body{
+  height: 100%;
+}
+
+header{
+  margin-top: -20px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  font-family: 'Markazi-Text';
+  color:#E6F8F6;
+  background-color: #0b0035;
+}
 body {
-  /* height:100%;
-  width:100%; */
+  /* padding: 60px; */
+  padding-top: 0px;
   font-family: "Lato", sans-serif;
   background-color: whitesmoke;
+  /* height:100%;
+  width:70%;
+  margin: 0 auto 0 auto; */
 }
 
-h1 {
-  margin-top: -20px;
+h1{
+  margin-top: 10px;
   color: #4a0406;
   font-family: 'Oranienbaum';
-  text-align: center;
-  font-size: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 65px;
 }
-
-p {
+p{
   padding-left: 30px;
   padding-right: 30px;
 
@@ -26,14 +41,6 @@ p {
   font-family: 'Scheherazade';
 }
 
-.header {
-  margin-top: -20px;
-  margin-bottom: 40px;
-  padding-top: 25px;
-  font-family: 'Markazi-Text';
-  color:#E6F8F6;
-  background-color: #0b0035;
-}
 
 
 .mTxt {
@@ -84,4 +91,33 @@ p {
   .sidenav a {
     font-size: 30px;
   }
+}
+
+.fairy {
+  /* The image used */
+  background-image: url('images/fairyforestful.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.fungi {
+  /* The image used */
+  background-image: url('images/fungi.jpg');
+
+  /* Full height */
+  height: 30%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
