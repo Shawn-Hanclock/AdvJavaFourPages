@@ -2,40 +2,38 @@
 <html>
 
 <head>
-  <title>Math Plants</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus Graphs</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Oranienbaum|Scheherazade" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oranienbaum|Scheherazade|Markazi-Text|Nova-Round"
+    rel="stylesheet">
+  <script src="js/nav.js" type="text/javascript"></script>
+  <script src="js/footer.js" type="text/javascript"></script>
 </head>
 
-
 <body>
-<header>
-  <div id="pg2SideBar" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html"><b>Page 2</b></a>
-    <a href="page3.html">Page 3</a>
+  <div class="mast">
+  <header>
+    <div id="sideBar/page2.html" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">HOME</a>
+      <a href="page1.html">GRAPHS</a>
+      <a href="page2.html"><b>QUIZ</b></a>
+      <a href="page3.html">RESOURCES</a>
+    </div>
+    <span style="
+    margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>menu</i></span>
+  </header>
+    <nav class="redwall">
+      <img src="images/butterfly.png" alt="banner butterflys" class="butterfly-image">
+      <h1>Quiz</h1>
+    </nav>
   </div>
-  <span style="
-  margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>Menu</i></span>
-</header>
-
-
-  <!-- contents of page -->
-  <h2>This is page 2.</h2>
-
+  <div class="content">
+    <!-- contents of page -->
+    <h2>This is page 2.</h2>
+  </div>
+  <div id="footer-container"></div>
 </body>
-<script>
-  function openNav() {
-    document.getElementById("pg2SideBar").style.width = "10%";
-  }
-
-  function closeNav() {
-    document.getElementById("pg2SideBar").style.width = "0";
-  }
-</script>
-
 </html>

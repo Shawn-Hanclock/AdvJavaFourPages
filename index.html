@@ -3,74 +3,55 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Math Plants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus Graphs</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Oranienbaum|Scheherazade|Markazi-Text|Nova-Round"
     rel="stylesheet">
+  <script src="js/nav.js" type="text/javascript"></script>
+  <script src="js/btns.js" type="text/javascript"></script>
+  <script src="js/footer.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <button onclick="topFunction()" id="btnTop" title="Go to top">Back Top</button>
+  <button onclick="topFunction()" id="btnTop" class="btns" title="Go to top">Back Top</button>
+  <div class="mast">
   <header>
-    <div id="indxSideBar" class="sidenav">
+    <div id="sideBar/index.html" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html"><b>Home</b></a>
-      <a href="page1.html">Page #1</a>
-      <a href="page2.html">Page #2</a>
-      <a href="page3.html">Page #3</a>
+      <a href="index.html"><b>HOME</b></a>
+      <a href="page1.html">GRAPHS</a>
+      <a href="page2.html">QUIZ</a>
+      <a href="page3.html">RESOURCES</a>
     </div>
-    <span style="margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>Menu</i></span>
+    <span style="margin-left: 1%;" class="mTxt" onclick="openNav()">&#9776; <i>menu</i></span>
   </header>
-
-  <div class="fairyHome"></div>
-  <div style="height: 100%;">
-    <div>
-      <pre><u>Scrolling Image Effect + Client Call Decoration Theme</u></pre>
-      <h1>Plants and Math</h1>
-      <p style="padding-bottom: 30px;">Some people like math, others may not. But how are plants related to math, and how
-        does it connect to nature? (and maybe how is this math related to computer science) Have you ever thought about how
-        mathematical patterns relate to the nature of the world? Math and mathematical models are ultimately created to
-        understand our world, and as we will see, plants and nature are places where even math reaches.
-      </p>
-    </div>
-    <div class="fairyHome"
-      style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/enigma.jpg'); height: auto; padding-top: 30px;">
-      <img class="alanTurning" src="images/turning.jpg" style="padding-left: 70px; padding-bottom: 10px; ">
-
-      <div style="margin-left: 100px; background-color: rgba(0, 0, 0, 0.5); padding: 15px; color: rgba(245, 245, 245, 1);">
-        <p class="textTurning" style="white-padding-top: 50px;">
-          The late <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank"><i>Alan Turing</i></a>,
-          the famous mathematician and computer scientist, was particularly interested in the phenomenon, the connection of math and nature.
-          He was curious to know how biology connects to mathematics, or in other words, how mathematics can predict nature.
-          Alan Turing, before passing, made significant contributions in the field, creating a basis for how we understand biological development today.
-        </p>
-        <p style="white-padding-top: 50px;">
-          An interesting thing to mention from Turing's work is his theories about pattern formation in nature.
-          <a href="https://en.wikipedia.org/wiki/Turing_pattern" target="_blank"><i>Turning Patterns</i></a>.
-          To keep it simple, what he found was that simple chemical reactions lead to the emergence of complex and structured
-          patterns in biology. Alan Turing used math to understand how we grow fingers.
-        </p>
-      </div>
-    </div>
-    <h4 style="text-align: center; padding: 20px;">
-      Check out the other pages in the <i style="font-family: 'Markazi-Text'; ">Menu</i>, to learn about other nature math phenomena. 
-    </h4>
+  <nav class="redwall">
+    <img src="images/butterfly.png" alt="banner butterflys" class="butterfly-image">
+    <h1>Welcome, to Homepage.</h1>
+    <!-- <img src="images/decal.png" alt="banner flowers" class="decal-image"> -->
+  </nav>
   </div>
-  <script>
-    function openNav() {
-      document.getElementById("indxSideBar").style.width = "10%";
-    }
+  
+  <div class="content">
+    <main>
+      <section class="pageTexts">
+        <h2>What do you learn in highschool Calculus?</h2>
+        <p>Well, many interesting <b>Calculus</b> techniques of course,<br>
+          but.. you also learn many different types of graphs.<br></p>
+        <p>In these webpages you will be shown, the many graphs of Calculus <br>
+        from <i>Calc AB</i> to <i>Calc BC</i>.<br></p>
 
-    function closeNav() {
-      document.getElementById("indxSideBar").style.width = "0";
-    }
+        <!-- <video autoplay loop muted width="500" height="300" src="https://giphy.com/embed/d1Gvd3wrtBcaMkhO">
+            </video>-->
+        <div class="graph1">
+          <img alt="image via GIPHY" width="500" height="300" src="images/math.gif">
+          <p class="caption">graph via GIPHY</p>
+        </div>
 
-    function topFunction() {
-      // Add your topFunction implementation here
-    }
-  </script>
-  <script src="script.js" type="text/javascript"></script>
+    </main>
+  </div>
+  <div id="footer-container"></div>
 </body>
 
 </html>
