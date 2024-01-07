@@ -67,9 +67,21 @@ body {
 
 main
 {
+  /* display: flex; */
+  align-items: center;
+  width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+table, th, td {
+  border:1px solid black;
+}
+
+td {
+  text-align: center;
+}
+
 footer {
   background-color: #333;
   color: #cfcfcf;
@@ -170,8 +182,11 @@ h1 {
 h2, p {
   padding-bottom: 10px;
 }
+h2 {
+  padding-top: 10px;
+}
 
-.graph1 {
+#graph1 {
   display: inline-block;
 }
 
