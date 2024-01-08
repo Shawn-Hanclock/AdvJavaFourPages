@@ -9,7 +9,8 @@
 // find the current page based on url
 var currenturl = document.URL.toString()
 const urlArray = currenturl.split("/", 4);
-var navId = "sideBar/" + urlArray[3];
+const indexArray = urlArray[3].split("?");
+var navId = "sideBar/" + indexArray[0];
 
 // check if page right
 console.log(navId);
@@ -22,6 +23,7 @@ function topFunction() {
 
 // side bar script
 function openNav() {
+  
   try {
     document.getElementById(navId).style.width = "auto"; 
     document.getElementById(navId).style.minWidth = "220px";

@@ -34,7 +34,7 @@
     <!-- contents of page -->
     <main>
       <div class="form-container"> 
-        <h2>Suggestions</h2>
+        <h2>A quick moment of your time.</h2>
         <h4 id="errorText"></h4> 
       <form id="surveyForm">
         <label for="name">
@@ -45,7 +45,55 @@
         <label for="grade">
           Grade Level:
         </label><br>
-        <input type="number" id="grade" name="grade" required><br>
+        <input type="radio" id="middle" name="grade" value="Middle" required>
+        <label for="middle"> 
+            8th grade and below (not in highschool) 
+        </label><br>
+        <input type="radio" 
+           id="9th" 
+           name="grade" 
+           value="9th" 
+           required>
+        <label for="9th"> 
+        9th grade (freshman) 
+        </label><br> 
+        <input type="radio" 
+           id="10th" 
+           name="grade" 
+           value="10th" 
+           required> 
+
+        <label for="10th"> 
+        10th grade (sophomore) 
+        </label><br> 
+        <input type="radio" 
+           id="11th" 
+           name="grade" 
+           value="11th" 
+           required> 
+
+        <label for="11th"> 
+        11th grade (junior) 
+        </label><br> 
+        <input type="radio" 
+           id="12th" 
+           name="grade" 
+           value="12th" 
+           required> 
+
+        <label for="12th"> 
+        12th grade (senior) 
+        </label><br> 
+
+        <input type="radio" 
+           id="other" 
+           name="grade" 
+           value="other" 
+           required> 
+
+        <label for="other"> 
+        Other (finished highschool) 
+        </label><br> 
 
         <label for="helpfulness"> 
           What did you find helpful with this site: 
