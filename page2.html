@@ -19,7 +19,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">HOME</a>
       <a href="page1.html">GRAPHS</a>
-      <a href="page2.html"><b>QUIZ</b></a>
+      <a href="page2.html"><b>FORM</b></a>
       <a href="page3.html">RESOURCES</a>
     </div>
     <span style="
@@ -27,13 +27,59 @@
   </header>
     <nav class="redwall">
       <img src="images/butterfly.png" alt="banner butterflys" class="butterfly-image">
-      <h1>Quiz</h1>
+      <h1>User Form - Survey</h1>
     </nav>
   </div>
   <div class="content">
     <!-- contents of page -->
-    <h2>This is page 2.</h2>
+    <main>
+      <div class="form-container"> 
+        <h2>Suggestions</h2>
+        <h4 id="errorText"></h4> 
+      <form id="surveyForm">
+        <label for="name">
+        Name:
+        </label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="grade">
+          Grade Level:
+        </label><br>
+        <input type="number" id="grade" name="grade" required><br>
+
+        <label for="helpfulness"> 
+          What did you find helpful with this site: 
+        </label><br> 
+        <input type="textarea" 
+             id="helpfullness" 
+             name="helpfullness" 
+             required><br> 
+
+        <label for="lacking"> 
+          What did you find lacking with this site: 
+        </label><br> 
+        <input type="textarea" 
+             id="lacking" 
+             name="lacking" 
+             required><br> 
+
+        <label for="feedback"> 
+          Additional thoughts: 
+        </label><br> 
+        <input type="textarea" 
+             id="feedback" 
+             name="feedback"><br> 
+        
+        <button type="submit"> 
+            Submit 
+        </button> 
+      </form>
+      </div>
+    </main>
   </div>
   <div id="footer-container"></div>
 </body>
 </html>
+
+
+
