@@ -376,3 +376,8 @@ dl dd {
     box-shadow: 10px 10px 5px #384b51;
   margin-bottom: 30px;
 }
+
+.eq {
+  background-color: parchment;
+  /* box-shadow: 10px 10px 5px #384b51; */
+}
