@@ -13,9 +13,14 @@
 //   }
 // }
 
-let formBtm = document.getElementById("submit");
-formBtm.addEventListener("click", function(e) {
+var submissions = 0;
 
+let formBtm = document.getElementById("submit");
+// let total = document.getElementById("totalsub");
+formBtm.addEventListener("click", function(e) {
+  submissions++;
+
+  document.getElementById("totalsub").innerHTML = "Total # of submissions: " + submissions;
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
