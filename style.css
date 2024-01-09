@@ -1,20 +1,20 @@
-/* brings the page borders to the edges */
+/* Reset styles for all elements */
 * {
   padding: 0;
   margin: 0;
 }
 
-html,
-body {
+/* Set up basic styles for the page */
+html, body {
   height: 100%;
+  font-family: "Lato", sans-serif;
+  background-color: whitesmoke;
 }
 
-.mast {
-  position: relative;
-}
-
+/* Header styles */
 header {
-  justify-content: center; 
+  display: block;
+  justify-content: center;
   width: 100%;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -24,6 +24,7 @@ header {
   background-color: #02000f;
 }
 
+/* Butterfly image styles */
 .butterfly-image {
   position: absolute;
   top: 0;
@@ -32,10 +33,7 @@ header {
   height: 70px;
 }
 
-.decal-image {
-  display: none;
-}
-
+/* Red wall styles */
 .redwall {
   position: relative;
   justify-content: center;
@@ -46,19 +44,15 @@ header {
   height: 70px;
 }
 
+/* Main content styles */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 0px;
-  font-family: "Lato", sans-serif;
-  background-color: whitesmoke;
 }
 
-.content, .contenthome{
-  flex: 1; 
-  /* padding-top: 10px;  */
-  /* padding-bottom: 10px;  */
+.content, .contenthome {
+  flex: 1;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -70,24 +64,28 @@ body {
   min-width: 60%;
 }
 
-main
-{
-  /* display: flex; */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+/* Table styles */
 table, th, td {
-  border:1px solid black;
+  border: 1px solid black;
 }
 
 td {
   text-align: center;
 }
 
+/* Footer styles */
 footer {
+  width: 100%;
   background-color: #333;
   color: #cfcfcf;
   padding: 20px;
@@ -100,14 +98,15 @@ footer p {
   font-size: 14px;
 }
 
+/* Menu and three bars styles */
 .mTxt {
-  /* the menu and three bars */
-  line-height:auto-flow;
+  line-height: auto-flow;
   vertical-align: middle;
   font-size: 30px;
-  cursor: pointer
+  cursor: pointer;
 }
 
+/* Side navigation styles */
 .sidenav {
   height: 100%;
   width: 0;
@@ -115,7 +114,7 @@ footer p {
   z-index: 3;
   top: 0;
   left: 0;
-  background-color:  #E8CC53;
+  background-color: #E8CC53;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -153,6 +152,7 @@ footer p {
   }
 }
 
+/* Button styles */
 .btns {
   display: none;
   position: fixed;
@@ -174,46 +174,52 @@ footer p {
   background-color: #555;
 }
 
+/* Page text styles */
 .pageTexts {
-  /* justify-content: left; */
   text-align: left;
   padding-left: 30px;
-   word-wrap: break-word;
-   /* width: 60%; */
+  word-wrap: break-word;
 }
 
+/* Heading styles */
 h1 {
   margin: 0;
-  color:#efefef;
+  color: #efefef;
   text-align: center;
 }
 
+/* Paragraph styles */
 p {
   font-family: Consolas, monospace;
 }
 
-h2, p {
+/* Heading and paragraph spacing */
+h2,
+p {
   padding-bottom: 10px;
 }
+
 h2 {
   padding-top: 10px;
 }
 
+/* Graph styles */
 #graph1 {
   display: inline-block;
 }
 
+/* Image caption styles */
 .caption {
   display: block;
   text-align: right;
 }
 
+/* Cat image container styles */
 .cat {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* width: 100vh; */
   padding: 10px 0;
   max-width: 80%;
   margin: 0 auto;
@@ -222,87 +228,107 @@ h2 {
 .cat img {
   width: auto;
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
-.form-container { 
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    background-color: #fff; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px
-        rgba(0, 0, 0, 0.1); 
-} 
+/* Form container styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-label { 
-    margin-top: 1rem; 
+/* Form label styles */
+label {
+  margin-top: 1rem;
   font-family: Consolas, monospace;
-} 
+}
 
-input { 
-    padding: 10px; 
-    box-sizing: border-box; 
-    margin: 1.2rem 0; 
-}   
+/* Form input styles */
+input {
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1.2rem 0;
+}
 
-input[type="text"], 
-input[type="number"] { 
-    width: 100%; 
-} 
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+}
 
-input[type="textarea"] { 
-    width: 100%; 
-    height: 10rem; 
-} 
+/* Textarea input styles */
+input[type="textarea"] {
+  width: 100%;
+  height: 10rem;
+}
 
-button { 
-    width: 100%; 
-    padding: 10px; 
-    background-color:  #882733; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-} 
+/* Button styles */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #882733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-button:hover { 
-    background-color: #992e3a; 
-} 
+button:hover {
+  background-color: #992e3a;
+}
 
-.error { 
-    border: 3px solid red; 
-} 
+/* Error styles */
+.error {
+  border: 3px solid red;
+}
 
-.errorText { 
-    padding: 1rem; 
-    border: 2px solid red; 
-    box-shadow: rgba(149, 157, 165, 0.2) 
-        0px 4px 12px; 
-    font-size: 1.2rem; 
-    font-family: "Lucida Sans", 
-        "Lucida Sans Regular", 
-        sans-serif; 
-} 
+/* Error text styles */
+.errorText {
+  padding: 1rem;
+  border: 2px solid red;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+}
 
-.successText { 
-    padding: 1rem; 
-    border: 4px solid green; 
-    box-shadow: rgba(149, 157, 165, 0.2) 
-        0px 4px 12px; 
-    font-size: 1.2rem; 
-    font-family: "Lucida Sans", 
-        "Lucida Sans Regular", 
-        sans-serif; 
-} 
+/* Success text styles */
+.successText {
+  padding: 1rem;
+  border: 4px solid green;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+}
 
+/* Letter styles */
 .letter {
   text-align: left;
-  float:none;
+  float: none;
   padding: 10px;
 }
 
+/* Letter container styles */
 .letter-container {
-  width: 50%;
+  width: 50h%;
   /* min-width: 70%; */
+}
+
+/* List styles */
+ul.links {
+  list-style-type: circle;
+}
+
+/* All graphs container styles */
+allgraphs {
+  position: relative;
+}
+
+/* Full page styles */
+fullpage {
+  height: 100%;
+  width: 100%;
+  /* height: 100vh; */
 }
